@@ -1,9 +1,14 @@
 
 .App {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   width: 100vw;
   height: 100vh;
+}
+
+.Game {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  height: 100%;
 }
 
 .cards {
