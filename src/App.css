@@ -1,0 +1,21 @@
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+
+.cards {
+  background-color: green;
+  grid-column: 1 / span 2;
+}
+
+.canvas {
+  grid-column: 3 / span 10;
+  position: relative;
+  border: solid 1px red;
+}
+
+
+

@@ -1,0 +1,12 @@
+
+.card {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 2px;
+}
+
+.card.ranked {
+    position: absolute
+}
