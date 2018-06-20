@@ -1,16 +1,11 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import './Card.css';
 
-class Card extends Component {
-    render() {
-        const style = this.props.pos || {};
-        return <div
-         draggable
-         className={["card", this.props.card.status].join(" ")}
-         style={style}
-         onDragStart={(e)=>{this.props.onDragStart(e, this.props.card)}}>{this.props.card.name}</div>;
-    }
-}
-
-export default Card;
+export default props => (
+    <div
+        draggable
+        className={["card", props.card.status].join(" ")}
+        style={props.pos || {}}
+        onDragStart={(e)=>{props.onDragStart(e, props.card)}}>{props.card.name}</div>
+);
